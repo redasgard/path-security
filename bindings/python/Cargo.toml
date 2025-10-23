@@ -1,0 +1,13 @@
+[package]
+name = "path-security-python"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "path_security_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+path-security = { path = "../../../" }
+serde_json = "1.0"

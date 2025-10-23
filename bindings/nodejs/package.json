@@ -1,0 +1,22 @@
+{
+  "name": "path-security-node",
+  "version": "0.1.0",
+  "description": "Node.js bindings for Path Security",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "neon build --release",
+    "install": "neon build --release",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "neon-cli": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "files": [
+    "lib/",
+    "native/"
+  ]
+}

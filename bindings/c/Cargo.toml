@@ -1,0 +1,13 @@
+[package]
+name = "path-security-c"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "path_security_c"
+crate-type = ["cdylib"]
+
+[dependencies]
+path-security = { path = "../../../" }
+libc = "0.2"
+serde_json = "1.0"
