@@ -1,0 +1,22 @@
+[package]
+name = "path-security"
+version = "0.2.0"
+edition = "2021"
+authors = ["Red Asgard <hello@redasgard.com>"]
+license = "MIT"
+description = "Comprehensive path validation and sanitization library with 85%+ attack vector coverage"
+repository = "https://github.com/redasgard/path-security"
+keywords = ["security", "path", "validation", "traversal", "sanitization"]
+categories = ["filesystem", "security"]
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0"
+
+[dev-dependencies]
+tempfile = "3.8"
+
+[lib]
+name = "path_security"
+path = "src/lib.rs"
+

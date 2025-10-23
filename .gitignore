@@ -1,0 +1,29 @@
+# Rust build artifacts
+/target/
+Cargo.lock
+
+# Coverage files
+*.profraw
+*.profdata
+*-profraw-list
+
+# Documentation files (exclude all-caps .md files except CHANGELOG and README)
+[A-Z_]*.md
+![C]HANGELOG.md
+![R]EADME.md
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp
+
