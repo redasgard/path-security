@@ -24,15 +24,17 @@ A clear and concise description of any alternative solutions or features you've 
 ## Use Case
 Describe the specific use case for this feature:
 - **Application Type**: [e.g. Web application, CLI tool, API service]
-- **Security Context**: [e.g. Security validation, threat detection, etc.]
+- **Security Context**: [e.g. File upload validation, archive extraction, git operations]
+- **Attack Vectors**: [e.g. Path traversal, encoding attacks, Unicode attacks]
 
 ## Code Example
 ```rust
 // Example of how you'd like to use the new feature
-use path-security::*;
+use path_security::{validate_path, new_feature};
 
 fn main() -> anyhow::Result<()> {
     // Your proposed usage
+    let result = new_feature("example")?;
     Ok(())
 }
 ```
@@ -41,6 +43,7 @@ fn main() -> anyhow::Result<()> {
 - [ ] This feature affects security validation
 - [ ] This feature involves new attack patterns
 - [ ] This feature involves performance implications
+- [ ] This feature involves cross-platform compatibility
 
 ## Additional Context
 Add any other context or screenshots about the feature request here.

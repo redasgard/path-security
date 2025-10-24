@@ -7,10 +7,6 @@
 
 A **comprehensive** path validation and sanitization library to prevent path traversal attacks in Rust applications.
 
-> 🛡️ **Security-First Design**: Protects against **85%+ of known path traversal techniques** including encoding attacks, Unicode tricks, Windows-specific exploits, code page homoglyphs, SSRF prevention, and advanced evasion methods. Validated against **86 real-world attack patterns** with **100% blocking rate**.
->
-> 📊 **What about the remaining 15%?** The remaining attack vectors are **runtime-dependent** (symlinks, TOCTOU), **context-specific** (application behavior), or **rare edge cases**. See [REMAINING_15_PERCENT.md](REMAINING_15_PERCENT.md) for details and application-level mitigation strategies to achieve 100% coverage.
-
 ## Features
 
 - **Path Traversal Prevention**: Validates paths to ensure they don't escape base directories
@@ -319,5 +315,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Origin
 
-This library was extracted from the [Valkra](https://github.com/asgardtech/valkra) blockchain security auditing platform, where it's been battle-tested in production handling untrusted code repositories. The library was made standalone to benefit the broader Rust ecosystem with enterprise-grade path security.
+This library was extracted from the [Red Asgard](https://github.com/redasgard) security platform, where it's been battle-tested in production handling untrusted code repositories. The library was made standalone to benefit the broader Rust ecosystem with enterprise-grade path security.
 

@@ -25,10 +25,16 @@ A clear and concise description of what actually happened.
 ## Code Example
 ```rust
 // Minimal code example that reproduces the issue
-use path-security::*;
+use path_security::validate_path;
+use std::path::Path;
 
 fn main() -> anyhow::Result<()> {
-    // Your code here
+    let base_dir = Path::new("/var/app/uploads");
+    let user_path = Path::new("your/malicious/path");
+    
+    // This should fail but doesn't (or vice versa)
+    let result = validate_path(user_path, base_dir)?;
+    println!("Result: {:?}", result);
     Ok(())
 }
 ```
@@ -36,13 +42,15 @@ fn main() -> anyhow::Result<()> {
 ## Environment
 - **OS**: [e.g. Ubuntu 22.04, Windows 11, macOS 13.0]
 - **Rust Version**: [e.g. 1.70.0]
-- **path-security Version**: [e.g. 0.1.0]
+- **path-security Version**: [e.g. 0.2.0]
 - **Architecture**: [e.g. x86_64, aarch64]
 
 ## Security Considerations
 - [ ] This bug could be a security vulnerability
-- [ ] This bug involves security validation
-- [ ] This bug involves performance implications
+- [ ] This bug involves path traversal attacks
+- [ ] This bug involves encoding attacks
+- [ ] This bug involves Unicode attacks
+- [ ] This bug involves Windows-specific attacks
 
 ## Additional Context
 Add any other context about the problem here.
