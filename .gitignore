@@ -7,10 +7,13 @@ Cargo.lock
 *.profdata
 *-profraw-list
 
-# Documentation files (exclude all-caps .md files except CHANGELOG and README)
+# Documentation files (exclude all-caps .md files except CHANGELOG, README, CONTRIBUTING, CODE_OF_CONDUCT, and SECURITY)
 [A-Z_]*.md
 ![C]HANGELOG.md
 ![R]EADME.md
+![C]ONTRIBUTING.md
+![C]ODE_OF_CONDUCT.md
+![S]ECURITY.md
 
 # IDE and editor files
 .vscode/
