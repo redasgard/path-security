@@ -303,7 +303,7 @@ See [REMAINING_15_PERCENT.md](REMAINING_15_PERCENT.md) for comprehensive details
 
 ## Security
 
-If you discover a security vulnerability, please email security@asgardtech.com.
+If you discover a security vulnerability, please email security@redasgard.com.
 
 ## License
 
